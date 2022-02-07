@@ -1,0 +1,21 @@
+Th1: Tạo và xoá
+    CREAT DATABASE `my_database`;
+    DROP DATABASE `my_database`;
+
+Th2: Nhập và xuất
+    Nhập: Import-> Choose File-> Go
+    Xuất: Chọn CSDL muốn xuất-> Export->Go
+
+Th3: Tìm kiếm
+    SELECT * FROM `customers` WHERE `customerName` = 'Atelier graphique'
+     LÀm việc với CSDL
+    SELECT*FROM`customers` WHERE `customerNumber` = '10100'
+    Tìm kiếm trong trường customerNumber của bảng customers dựa trên toán tử "=" và giá trị là "10100"
+
+BT: SELECT, FROM, WHERE là các từ khoá
+    * là toán tử lấy toàn bộ các cột trong bảng customerName
+    WHERE điều kiện
+   - SELECT * FROM customers WHERE city IN ('Nantes',' Las Vegas',' Warszawa','NYC')
+   điều kiện của city  có trong IN()
+   - SELECT * FROM customers WHERE city is null
+   Kiểm tra xem trong trường city có bản ghi nào rỗng không.
